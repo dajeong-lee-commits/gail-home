@@ -238,8 +238,13 @@ p {
     width: calc(100% - 360px);
     margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    justify-content: right;
 }
+
+.section3 .inner {
+    justify-content: unset;
+}
+
 
 .section2and3 .inner::before {
     content: '';
@@ -269,35 +274,49 @@ p {
 }
 
 .section2and3 .inner .item_wrap {
-    width: 40.58%;
+    width: 50%;
+    padding-left: 9%;
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
 }
 
-#section3 .inner .item_wrap {
-    width: 40.58%;
-    z-index: 1;
+.section3 .inner .item_wrap {
+    padding-left: 0;
+    padding-right: 9%;
 }
+
 
 
 .section2and3 .inner .item_wrap .text_wrap {
     font-size: 20px;
+
 }
 
 
 .section2and3 .inner .item_wrap .text_wrap h3 {
     margin-bottom: 10px;
     font-family: 'Eulyoo1945';
+    font-size: 18px;
     font-weight: bold;
+    text-align: center;
+
+
 }
 
 .section2and3 .inner .item_wrap .text_wrap h2 {
     font-size: 50px;
     font-family: 'Eulyoo1945';
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .section2and3 .inner .item_wrap .text_wrap p {
-    margin: 20px 0 30px;
+    margin-bottom: 20px;
 }
 
 .section2and3 .inner .item_wrap .view_btn a {
@@ -313,20 +332,12 @@ p {
     transition: 0.3s;
 }
 
-#section2 .inner {
-    align-items: flex-end;
-}
 
-#section2 .inner .image {
+.section2 .inner .image {
     left: 0;
 }
 
-#section3 .inner {
-    align-items: flex-start;
-    text-align: right;
-}
-
-#section3 .inner .image {
+.section3 .inner .image {
     right: 0;
 }
 
@@ -337,7 +348,7 @@ p {
 
 
 
-#section4 .inner {
+.section4 .inner {
     max-width: 1200px;
     width: calc(100% - 360px);
     margin: 0 auto;
@@ -346,34 +357,35 @@ p {
 
 }
 
-#section4 .inner .title_wrap h2 {
+.section4 .inner .title_wrap h2 {
     white-space: nowrap;
+    margin-bottom: 10px;
 
 }
 
-#section4 .inner .list {}
+.section4 .inner .list {}
 
 
-#section4 .inner .list .palette {
+.section4 .inner .list .palette {
     display: flex;
     justify-content: right;
     gap: 3.47%;
 
 }
 
-#section4 .inner .list .palette.palette-row3,
-#section4 .inner .list .palette.palette-top {
+.section4 .inner .list .palette.palette-row3,
+.section4 .inner .list .palette.palette-top {
     padding-left: 12.78%;
 }
 
-#section4 .inner .list .palette.palette-row2,
-#section4 .inner .list .palette.palette-bottom {
+.section4 .inner .list .palette.palette-row2,
+.section4 .inner .list .palette.palette-bottom {
     padding-right: 12.78%;
 }
 
 
 
-#section4 .inner .list .palette .item {
+.section4 .inner .list .palette .item {
     width: 26.08%;
     /*     height: 168px; */
     display: flex;
@@ -381,14 +393,14 @@ p {
     position: relative;
 }
 
-#section4 .inner .list .palette .item a>img {
+.section4 .inner .list .palette .item a>img {
     width: 100%;
     height: 100%;
     display: block;
     position: relative;
 }
 
-#section4 .inner .list .palette .item a .stone_info {
+.section4 .inner .list .palette .item a .stone_info {
     width: 89%;
     height: 89%;
     position: absolute;
@@ -404,21 +416,21 @@ p {
 }
 
 
-#section4 .inner .list .palette .item a .stone_info img {
+.section4 .inner .list .palette .item a .stone_info img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     opacity: 0;
 }
 
-#section4 .inner .list .palette .item:hover a .stone_info img {
+.section4 .inner .list .palette .item:hover a .stone_info img {
     opacity: 1;
     transition: opacity 0.2s ease-in-out;
 
 }
 
 
-#section4 .inner .list .palette .item a .stone_info .stone_name {
+.section4 .inner .list .palette .item a .stone_info .stone_name {
     display: block;
     position: absolute;
     top: 50%;
@@ -432,17 +444,17 @@ p {
     white-space: nowrap;
 }
 
-#section4 .inner .list .palette .item a .stone_info .stone_name.bright {
+.section4 .inner .list .palette .item a .stone_info .stone_name.bright {
     color: #1F1F1F;
     text-shadow: none;
 }
 
-#section4 .inner .list .palette .item a .stone_info .stone_name strong {
+.section4 .inner .list .palette .item a .stone_info .stone_name strong {
     font-size: 16px;
     font-weight: 400;
 }
 
-#section4 .inner .list .palette .item a .stone_info .stone_name span {
+.section4 .inner .list .palette .item a .stone_info .stone_name span {
     font-size: 14px;
     font-weight: 300;
     font-family: 'Eulyoo1945';
@@ -609,20 +621,30 @@ footer .inner .copyright p {
         max-width: 1023px;
         width: calc(100% - 80px);
 
+
     }
 
     .section2and3 .inner .item_wrap {
-        width: 44.24%;
+        width: 48.93%;
         z-index: 1;
+        padding-left: 2.12%;
+        gap: 30px;
+    }
+
+    .section3 .inner .item_wrap {
+        padding-left: 0;
+        padding-right: 2.12%;
     }
 
     .section2and3 .inner .item_wrap .text_wrap h3 {
         font-size: 14px;
         margin-bottom: 4px;
+
     }
 
     .section2and3 .inner .item_wrap .text_wrap h2 {
         font-size: 40px;
+        margin-bottom: 40px;
     }
 
     .section2and3 .inner .item_wrap .text_wrap p {
@@ -635,23 +657,24 @@ footer .inner .copyright p {
     }
 
 
-    #section4 .inner {
+
+    .section4 .inner {
         max-width: 1023px;
         width: calc(100% - 80px);
         display: block;
     }
 
-    #section4 .title_wrap {
+    .section4 .title_wrap {
         margin-bottom: 45px;
         text-align: center;
     }
 
-    #section4 .title_wrap h2 {
+    .section4 .title_wrap h2 {
         margin-bottom: 20px;
     }
 
 
-    #section4 .inner .list {
+    .section4 .inner .list {
         display: flex;
         justify-content: center;
         gap: 16px;
@@ -659,24 +682,24 @@ footer .inner .copyright p {
     }
 
 
-    #section4 .inner .list .palette {
+    .section4 .inner .list .palette {
         display: flex;
         flex-direction: column;
         gap: 16px;
     }
 
-    #section4 .inner .list .palette.palette-row3,
-    #section4 .inner .list .palette.palette-top {
+    .section4 .inner .list .palette.palette-row3,
+    .section4 .inner .list .palette.palette-top {
         padding-left: 0;
     }
 
-    #section4 .inner .list .palette.palette-row2,
-    #section4 .inner .list .palette.palette-bottom {
+    .section4 .inner .list .palette.palette-row2,
+    .section4 .inner .list .palette.palette-bottom {
         padding-right: 0;
     }
 
 
-    #section4 .inner .list .palette .item {
+    .section4 .inner .list .palette .item {
         width: 168px;
         height: 168px;
         display: flex;
@@ -684,14 +707,14 @@ footer .inner .copyright p {
         position: relative;
     }
 
-    #section4 .inner .list .palette .item a>img {
+    .section4 .inner .list .palette .item a>img {
         width: 100%;
         height: 100%;
         display: block;
         position: relative;
     }
 
-    #section4 .inner .list .palette .item a .stone_info {
+    .section4 .inner .list .palette .item a .stone_info {
         width: 89%;
         height: 89%;
         position: absolute;
@@ -707,21 +730,21 @@ footer .inner .copyright p {
     }
 
 
-    #section4 .inner .list .palette .item a .stone_info img {
+    .section4 .inner .list .palette .item a .stone_info img {
         width: 100%;
         height: 100%;
         object-fit: cover;
         opacity: 0;
     }
 
-    #section4 .inner .list .palette .item:hover a .stone_info img {
+    .section4 .inner .list .palette .item:hover a .stone_info img {
         opacity: 1;
         transition: opacity 0.2s ease-in-out;
 
     }
 
 
-    #section4 .inner .list .palette .item a .stone_info .stone_name {
+    .section4 .inner .list .palette .item a .stone_info .stone_name {
         display: block;
         position: absolute;
         top: 50%;
@@ -734,17 +757,17 @@ footer .inner .copyright p {
         text-shadow: 0px 0px 10px #3a3a3ad2;
     }
 
-    #section4 .inner .list .palette .item a .stone_info .stone_name.bright {
+    .section4 .inner .list .palette .item a .stone_info .stone_name.bright {
         color: #1F1F1F;
         text-shadow: none;
     }
 
-    #section4 .inner .list .palette .item a .stone_info .stone_name strong {
+    .section4 .inner .list .palette .item a .stone_info .stone_name strong {
         font-size: 16px;
         font-weight: 400;
     }
 
-    #section4 .inner .list .palette .item a .stone_info .stone_name span {
+    .section4 .inner .list .palette .item a .stone_info .stone_name span {
         font-size: 14px;
         font-weight: 300;
         font-family: 'Eulyoo1945';
@@ -923,10 +946,7 @@ footer .inner .copyright p {
     .section2and3 .inner {
         max-width: 767px;
         width: calc(100% - 40px);
-    }
-
-    #section3 .inner {
-        text-align: left;
+        display: block;
     }
 
 
@@ -942,10 +962,14 @@ footer .inner .copyright p {
 
     .section2and3 .inner .item_wrap {
         width: 100%;
+        padding-left: 0;
+        gap: 0;
     }
 
-    #section3 .inner .item_wrap {
+    .section3 .inner .item_wrap {
         width: 100%;
+        padding-right: 0%;
+
     }
 
     .section2and3 .inner .item_wrap .text_wrap h3 {
@@ -955,18 +979,17 @@ footer .inner .copyright p {
 
     .section2and3 .inner .item_wrap .text_wrap h2 {
         font-size: 30px;
+        margin-bottom: 20px;
     }
 
-    .section2and3 .inner .item_wrap .text_wrap p {
-        margin: 20px 0;
-    }
+    .section2and3 .inner .item_wrap .text_wrap p {}
 
     .section2and3 .inner .item_wrap .view_btn a {
         font-size: 12px;
         padding: 2px 6px;
     }
 
-    #section4 .inner {
+    .section4 .inner {
         max-width: 767px;
         width: calc(100% - 40px);
         display: block;
@@ -974,7 +997,7 @@ footer .inner .copyright p {
         /* 책갈피 */
     }
 
-    #section4 .inner .list {
+    .section4 .inner .list {
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -983,34 +1006,34 @@ footer .inner .copyright p {
     }
 
 
-    #section4 .inner .list .palette {
+    .section4 .inner .list .palette {
         justify-content: space-between;
         gap: 16px;
 
     }
 
-    #section4 .inner .list .palette.palette-row3,
-    #section4 .inner .list .palette.palette-top {
+    .section4 .inner .list .palette.palette-row3,
+    .section4 .inner .list .palette.palette-top {
         padding-left: 0;
     }
 
-    #section4 .inner .list .palette.palette-row2,
-    #section4 .inner .list .palette.palette-bottom {
+    .section4 .inner .list .palette.palette-row2,
+    .section4 .inner .list .palette.palette-bottom {
         padding-right: 0;
     }
 
 
-    #section4 .inner .list .palette .item {
+    .section4 .inner .list .palette .item {
         width: 32.13%;
     }
 
 
-    #section4 .inner .list .palette .item a .stone_info .stone_name strong {
+    .section4 .inner .list .palette .item a .stone_info .stone_name strong {
         font-size: 14px;
         font-weight: 400;
     }
 
-    #section4 .inner .list .palette .item a .stone_info .stone_name span {
+    .section4 .inner .list .palette .item a .stone_info .stone_name span {
         display: none;
         font-weight: 600;
     }
