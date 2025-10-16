@@ -26,6 +26,18 @@
 
         });/* 풀페이지 */
 
+        let depth01 = document.querySelector('.depth-01')
+        let bg = document.querySelector('.bg');
+
+        depth01.addEventListener('mouseover' , () => {
+            bg.style.display = 'block'; 
+
+        });
+         depth01.addEventListener('mouseout' , () => {
+
+
+        });
+
 
 
 
@@ -37,6 +49,7 @@
 
     <header id="header">
         <div class="inner">
+            <div class="bg"></div><!-- .bg end -->
             <h1 class="logo">
                 <a href="#"><img src="img/icon/logo임시.svg" alt="로고"></a>
             </h1><!-- .logo end -->
@@ -200,6 +213,7 @@
 
             </nav><!-- nav_mobile end -->
         </div><!-- .inner end -->
+
     </header><!-- #header end-->
 
 
