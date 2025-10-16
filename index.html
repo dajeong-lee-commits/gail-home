@@ -15,7 +15,7 @@
     window.onload = () => {
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['firstPage', 'secondPage', '3rdPage'],
-            sectionsColor: ['transparent', '#1F1F1F', '#F6F5F0', '#F6F5F0', '#1F1F1F', '#1F1F1F', '#1F1F1F', '#333333'],
+            sectionsColor: ['transparent', '#282019', '#F6F5F0', '#F6F5F0', '#282019', '#282019', '#282019', '#241C15'],
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: ['First page', 'Second page', 'Third and last page'],
@@ -25,18 +25,18 @@
             }
 
         });/* 풀페이지 */
-
-        let depth01 = document.querySelector('.depth-01')
-        let bg = document.querySelector('.bg');
-
-        depth01.addEventListener('mouseover' , () => {
-            bg.style.display = 'block'; 
-
-        });
-         depth01.addEventListener('mouseout' , () => {
-
-
-        });
+        /* 
+                let depth01 = document.querySelector('.depth-01')
+                let bg = document.querySelector('.bg');
+        
+                depth01.addEventListener('mouseover' , () => {
+                    bg.style.display = 'block'; 
+        
+                });
+                 depth01.addEventListener('mouseout' , () => {
+        
+        
+                }); */
 
 
 
@@ -223,13 +223,15 @@
                 <section class="main_visual">
                     <img src="img/main_visual/단청 확대사진.png" alt="">
                 </section><!-- .main_visual end -->
-                <h2 class="text">
-                    <p>전통의 색을 찾아서</p>
-                </h2><!-- .text end -->
+                <div class="title_wrap">
+                    <h2>한국 전통의 色</h2>
+                    <p>Traditional Color of Korea</p>
+                </div><!-- .title_wrap end -->
             </main><!-- .main end -->
 
         </div>
         <div class="section section1" id="section1">
+            <img src="img/pattern/img.svg" alt="" class="pattern">
             <div class="inner">
                 <div class="item_wrap">
                     <div class="text_wrap">
@@ -240,9 +242,15 @@
                             천연안료를
                             개발하여 한국 채색 문화의 정통성을 이끌어가고자 합니다. </p>
                     </div><!-- .text_wrap end -->
-                    <div class="image">
-                        <img src="img/section/section1/img4.jpg" alt="">
-                    </div><!-- .image end -->
+                    <div class="image_wrap">
+                        <div class="image left">
+                            <img src="img/section/section-3.jpg" alt="" class="top">
+                            <img src="img/section/section-2.jpg" alt="" class="bottom">
+                        </div><!-- .image .image-left end -->
+                        <div class="image right">
+                            <img src="img/section/section1/img4.jpg" alt="">
+                        </div><!-- .image-left end -->
+                    </div><!-- image_wrap end -->
                 </div><!-- .item_wrap end -->
 
             </div><!-- .inner end -->
@@ -473,37 +481,37 @@
                 <div class="list">
                     <div class="item">
                         <a href="#">
-                            <img src="img/section/section-1.png" alt="">
+                            <img src="img/section/section05/item.png" alt="">
                             <div class="text">
                                 <strong>석채</strong>
-                                <p>수년간의 계획과 연구로 <br /> 생산에 성공한 고품질의 석채</p>
+                                <p>수년간의 계획과 연구로<br /> 생산에 성공한 고품질의 석채</p>
                             </div><!-- .text -->
                         </a>
                     </div><!-- .item end -->
                     <div class="item">
                         <a href="#">
-                            <img src="img/section/section-1.png" alt="">
+                            <img src="img/section/section05/item-1.png" alt="">
                             <div class="text">
-                                <strong>석채</strong>
-                                <p>수년간의 계획과 연구로 <br /> 생산에 성공한 고품질의 석채</p>
+                                <strong>토채</strong>
+                                <p>질박한 천연흙의 기품으로<br />분채를 대체합니다</p>
                             </div><!-- .text -->
                         </a>
                     </div><!-- .item end -->
                     <div class="item">
                         <a href="#">
-                            <img src="img/section/section-1.png" alt="">
+                            <img src="img/section/section05/item-2.png" alt="">
                             <div class="text">
-                                <strong>석채</strong>
-                                <p>수년간의 계획과 연구로 <br /> 생산에 성공한 고품질의 석채</p>
+                                <strong>유기안료</strong>
+                                <p>수년간의 계획과 연구로 <br />식물, 곤충의 분비물 등의 천연자원에서 추출됩니다</p>
                             </div><!-- .text -->
                         </a>
                     </div><!-- .item end -->
                     <div class="item">
                         <a href="#">
-                            <img src="img/section/section-1.png" alt="">
+                            <img src="img/section/section05/item-3.png" alt="">
                             <div class="text">
-                                <strong>석채</strong>
-                                <p>수년간의 계획과 연구로 <br /> 생산에 성공한 고품질의 석채</p>
+                                <strong>천연아교</strong>
+                                <p>안정된 도채층을 보장하는 <br />동 · 식물성 아교입니다.</p>
                             </div><!-- .text -->
                         </a>
                     </div><!-- .item end -->
@@ -515,10 +523,11 @@
 
         <div class="section section6" id="section6">
             <div class="inner">
+                <h2>가일소식</h2>
                 <div class="list">
                     <div class="item">
                         <div class="title_wrap">
-                            <h2>공지사항</h2>
+                            <h3>공지사항</h3>
                             <a href="#" class="btn-more">
                                 <span>More</span>
                                 <img src="img/icon/icon_more viewWhite.svg" alt="">
@@ -548,7 +557,7 @@
                     </div><!-- .item end  -->
                     <div class="item">
                         <div class="title_wrap">
-                            <h2>프로젝트</h2>
+                            <h3>프로젝트</h3>
                             <a href="#" class="btn-more">
                                 <span>More</span>
                                 <img src="img/icon/icon_more viewWhite.svg" alt="">
