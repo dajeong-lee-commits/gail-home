@@ -134,25 +134,25 @@
             </button><!-- .menu_btn end -->
 
             <nav class="nav_mobile mobile">
-                <button class="close_btn">
-                    <img src="img/icon/icon-close.svg" alt="">
-                </button><!-- .close_btn end -->
+                <div class="toolbar">
+                    <button class="close_btn">
+                        <img src="img/icon/icon-close.svg" alt="">
+                    </button><!-- .close_btn end -->
+                    <ul class="icon_wrap">
+                        <li>
+                            <a href="#"><img src="img/icon/icon-search.svg" alt="검색"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/icon/icon-my.svg" alt="마이페이지"></a>
+                        </li>
+                    </ul><!-- .icon_wrap end -->
+                </div><!-- .toolbar end -->
                 <ul class="util">
                     <li>
                         <a href="#">로그인</a>
                     </li>
                     <li>
                         <a href="#">회원가입</a>
-                    </li>
-                    <li>
-                        <ul class="icon_wrap">
-                            <li>
-                                <a href="#"><img src="img/icon/icon-search.svg" alt="검색"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="img/icon/icon-my.svg" alt="마이페이지"></a>
-                            </li>
-                        </ul><!-- .icon_wrap end -->
                     </li>
                 </ul><!-- .util end -->
 
@@ -187,7 +187,7 @@
                     </li>
                     <li>
                         <a href="#" class="depth-01">스토어</a>
-                        <ul class="depth-02">
+                     <!--    <ul class="depth-02">
                             <li><a href="#">가일상품</a></li>
                             <li><a href="#">물감</a></li>
                             <li><a href="#">혼합제</a></li>
@@ -198,7 +198,7 @@
                             <li><a href="#">도구</a></li>
                             <li><a href="#">기타</a></li>
                             <li><a href="#">용도별</a></li>
-                        </ul><!-- .depth-02 end -->
+                        </ul> .depth-02 end -->
                     </li>
                     <li>
                         <a href="#" class="depth-01">서비스</a>
@@ -262,6 +262,7 @@
                     <img src="img/section/section-2.jpg" alt="">
                 </div><!-- .image end -->
                 <div class="item_wrap">
+                    <img src="img/pattern/knot.svg" alt="">
                     <div class="text_wrap">
                         <h3>긴 세월 잃지 않는 선명한 아름다움.</h3>
                         <h2>‘석채’石彩</h2>
@@ -272,9 +273,10 @@
                             전통적인 색채 미감을 보여주는 재료입니다.</p>
 
                     </div><!-- .text_wrap end -->
-                    <div class="view_btn">
-                        <a href="#">＋제품보기</a>
-                    </div><!-- .view_btn -->
+                    <a href="#" class="btn-more dark">
+                        <span>제품보기</span>
+                        <img src="img/icon/icon_more viewWhite.svg" alt="">
+                    </a><!-- btn-more end -->
                 </div><!-- .item_wrap end -->
             </div><!-- .inner end -->
         </div><!-- #section2 end -->
@@ -285,6 +287,7 @@
                     <img src="img/section/section-3.jpg" alt="">
                 </div><!-- .image end -->
                 <div class="item_wrap">
+                    <img src="img/pattern/knot.svg" alt="">
                     <div class="text_wrap">
                         <h3>대지가 선물한 깊고 자연스러운 색</h3>
                         <h2>‘토채’土彩</h2>
@@ -295,9 +298,10 @@
                             인공 분채로 표현하기 어려운 천연스러움을 가지고 있습니다.
                         </p>
                     </div><!-- .text_wrap end -->
-                    <div class="view_btn">
-                        <a href="#">＋제품보기</a>
-                    </div><!-- .view_btn -->
+                    <a href="#" class="btn-more dark">
+                        <span>제품보기</span>
+                        <img src="img/icon/icon_more viewWhite.svg" alt="">
+                    </a><!-- btn-more end -->
                 </div><!-- .item_wrap end -->
             </div><!-- .inner end -->
         </div><!-- #section3 end -->
@@ -305,12 +309,18 @@
 
         <div class="section section4 " id="section4">
             <div class="inner">
-                <div class="title_wrap">
+                <div class="text_wrap">
                     <h2>천연석채의 원석原石</h2>
                     <p>본사는 원석에서 다양한 색상의 천연 석채를 <br />
                         최대 16단계의 입자별로 분류하고 있습니다.<br />
-                        한국 정통색의 바탕이 되는 대표적인 원석을 소개합니다. </p>
-                </div><!-- title_wrap end -->
+                        한국 정통색의 바탕이 되는 대표적인 원석을 소개합니다.
+                    </p>
+
+                    <a href="#" class="btn-more white">
+                        <span>색상표 보기</span>
+                        <img src="img/icon/icon_more viewWhite.svg" alt="">
+                    </a><!-- btn-more end -->
+                </div><!-- text_wrap end -->
                 <div class="list">
 
                     <ul class="palette palette-top">
@@ -517,6 +527,10 @@
                     </div><!-- .item end -->
 
                 </div><!-- .list end -->
+                <a href="#" class="btn-more white">
+                    <span>More</span>
+                    <img src="img/icon/icon_more viewWhite.svg" alt="">
+                </a><!-- btn-more end -->
 
             </div><!-- .inner end -->
         </div><!-- #section5 end -->
@@ -528,7 +542,7 @@
                     <div class="item">
                         <div class="title_wrap">
                             <h3>공지사항</h3>
-                            <a href="#" class="btn-more">
+                            <a href="#" class="btn-more white">
                                 <span>More</span>
                                 <img src="img/icon/icon_more viewWhite.svg" alt="">
                             </a><!-- btn-more end -->
@@ -558,7 +572,7 @@
                     <div class="item">
                         <div class="title_wrap">
                             <h3>프로젝트</h3>
-                            <a href="#" class="btn-more">
+                            <a href="#" class="btn-more white">
                                 <span>More</span>
                                 <img src="img/icon/icon_more viewWhite.svg" alt="">
                             </a><!-- btn-more end -->
