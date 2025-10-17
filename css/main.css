@@ -318,6 +318,7 @@ p {
 }
 
 .section0 .main .title_wrap {
+    text-align: left;
     position: absolute;
     top: 40%;
     left: 10%;
@@ -330,8 +331,10 @@ p {
 }
 
 .section0 .main .title_wrap p {
-    font-size: 20px;
-    font-weight: 200;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
 }
 
 
@@ -910,9 +913,11 @@ p {
         margin-bottom: 5px;
     }
 
+
     .section0 .main .title_wrap p {
-        font-size: 16px;
-        font-weight: 200;
+        margin-left: 5px;
+        font-size: 14px;
+        letter-spacing: 1px;
     }
 
     #section1 .inner {
@@ -1202,9 +1207,23 @@ p {
     }
 
 
+
     #section0 .main .main_visual {
         height: 300px;
         position: relative;
+    }
+
+    
+    .section0 .main .title_wrap h2 {
+        font-size: 22px;
+        margin-bottom: 2px;
+    }
+
+
+    .section0 .main .title_wrap p {
+        margin-left: 5px;
+        font-size: 12px;
+        letter-spacing: 1px;
     }
 
 
