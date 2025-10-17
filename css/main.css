@@ -26,9 +26,6 @@ p {
     padding: 3px 12px;
     display: inline-flex;
     align-items: center;
-
-
-
 }
 
 .btn-more span {}
@@ -38,9 +35,6 @@ p {
     height: 16px;
     object-fit: cover;
     display: block;
-
-
-
 }
 
 
@@ -126,12 +120,14 @@ p {
 
 
 #header .inner .logo {
-    width: 79px;
+    width: 80px;
+    height: 56px;
 }
 
 #header .inner .logo a {}
 
 #header .inner .logo a img {
+    width: 100%;
     display: block;
 }
 
@@ -255,9 +251,7 @@ p {
 
 }
 
-#header .inner .nav_mobile:active {
-
-}
+#header .inner .nav_mobile:active {}
 
 #header .inner .nav_mobile .toolbar {
     display: flex;
@@ -331,8 +325,10 @@ p {
 }
 
 .section0 .main .title_wrap h2 {
-    font-size: 60px;
+    font-size: 40px;
     margin-bottom: 10px;
+
+
 }
 
 .section0 .main .title_wrap p {
@@ -710,30 +706,44 @@ p {
 .section5 .inner .list .item {
     position: relative;
     width: 23.5%;
+    height: 282px;
+    position: relative;
 }
 
 .section5 .inner .list .item a {}
 
 .section5 .inner .list .item a img {
-
     width: 100%;
+    height: 100%;
     object-fit: cover;
 
 }
 
-.section5 .inner .list .item a .text {
+.section5 .inner .list .item a .text::after {
+    content: '';
+    color: #2929299a;
+    background-color: #1F1F1F;
     width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100%;
+    display: none;
+
 
 }
 
+.section5 .inner .list .item a .text {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .section5 .inner .list .item a .text strong {
+    display: block;
     font-size: 24px;
     font-weight: 600;
+    margin-bottom: 10px;
 
 }
 
@@ -876,6 +886,11 @@ p {
         font-size: 16px;
     }
 
+    .btn-more {
+        font-size: 14px;
+        padding: 3px 12px;
+    }
+
     #header .inner {
         height: 60px;
 
@@ -918,8 +933,6 @@ p {
     .section2and3 .inner {
         max-width: 1023px;
         width: calc(100% - 80px);
-
-
     }
 
     .section2and3 .inner .item_wrap {
@@ -951,7 +964,9 @@ p {
 
     .section2and3 .inner .item_wrap .view_btn a {}
 
-
+    .section2and3 .inner .item_wrap .btn-more.dark {
+        padding: 3px 12px;
+    }
 
     .section4 .inner {
         max-width: 1023px;
@@ -995,61 +1010,8 @@ p {
 
 
     .section4 .inner .list .palette .item {
-        width: 168px;
-        height: 168px;
-        display: flex;
-        justify-content: center;
-        position: relative;
-    }
-
-    .section4 .inner .list .palette .item a>img {
-        width: 100%;
-        height: 100%;
-        display: block;
-        position: relative;
-    }
-
-    .section4 .inner .list .palette .item a .stone_info {
-        width: 89%;
-        height: 89%;
-        position: absolute;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        border-radius: 50%;
-        overflow: hidden;
-    }
-
-
-    .section4 .inner .list .palette .item a .stone_info img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        opacity: 0;
-    }
-
-    .section4 .inner .list .palette .item:hover a .stone_info img {
-        opacity: 1;
-        transition: opacity 0.2s ease-in-out;
-
-    }
-
-
-    .section4 .inner .list .palette .item a .stone_info .stone_name {
-        display: block;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        z-index: -1;
-        text-shadow: 0px 0px 10px #3a3a3ad2;
+        width: 176px;
+        height: 176px;
     }
 
     .section4 .inner .list .palette .item a .stone_info .stone_name.bright {
@@ -1057,16 +1019,77 @@ p {
         text-shadow: none;
     }
 
-    .section4 .inner .list .palette .item a .stone_info .stone_name strong {
-        font-size: 16px;
-        font-weight: 400;
+
+    .section5 {}
+
+    .section5 .inner {
+        max-width: 1023px;
+        width: calc(100% - 80px);
+        margin: 0 auto;
     }
 
-    .section4 .inner .list .palette .item a .stone_info .stone_name span {
-        font-size: 14px;
-        font-weight: 300;
-        font-family: 'Eulyoo1945';
+    .section5 .inner .title_wrap {
+        margin-bottom: 40px;
     }
+
+    .section5 .inner .title_wrap h2 {
+        /*margin-bottom: 10px; */
+    }
+
+    .section5 .inner .title_wrap p {
+        font-size: 16px;
+    }
+
+    .section5 .inner .list {
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    .section5 .inner .list .item {
+        position: relative;
+        width: 23.5%;
+        height: 176px;
+        position: relative;
+    }
+
+    .section5 .inner .list .item a {}
+
+    .section5 .inner .list .item a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .section5 .inner .list .item a .text::after {
+        content: '';
+        color: #2929299a;
+        background-color: #1F1F1F;
+        width: 100%;
+        height: 100%;
+        display: none;
+
+
+    }
+
+    .section5 .inner .list .item a .text {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .section5 .inner .list .item a .text strong {
+        font-size: 20px;
+    }
+
+    .section5 .inner .list .item a .text p {
+        font-size: 14px;
+    }
+
+    .section5 .inner .btn-more {}
 
 
     .section6 {}
@@ -1107,52 +1130,11 @@ p {
 
     }
 
-
-    /* 
-    footer {}
-
-    footer .inner {
-        padding: 30px 0;
-        font-size: 14px;
+    .footer .inner .info_wrap {
+        gap: 0px;
+    
     }
 
-    footer .inner .footer_nav {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    footer .inner .footer_nav li {}
-
-    footer .inner .footer_nav li a {}
-
-    footer .inner .info_wrap {
-        margin: 20px 0px;
-        display: flex;
-        flex-direction: column;
-        gap: 4px;
-
-    }
-
-    footer .inner .info_wrap ul {
-        display: flex;
-        gap: 16px;
-        justify-content: center;
-
-    }
-
-    footer .inner .info_wrap ul li {}
-
-    footer .inner .copyright {
-        text-align: center;
-        color: #888888;
-    }
-
-    footer .inner .copyright p {
-        font-size: 14px;
-    } */
 
 }
 
@@ -1339,6 +1321,87 @@ p {
         font-weight: 600;
     }
 
+    .section5 {}
+
+    .section5 .inner {
+        max-width: 767px;
+        width: calc(100% - 40px);
+
+    }
+
+    .section5 .inner .title_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 50px;
+
+    }
+
+    .section5 .inner .title_wrap h2 {
+        /*     margin-bottom: 10px; */
+    }
+
+    .section5 .inner .title_wrap p {
+        font-size: 20px;
+    }
+
+    .section5 .inner .list {
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 50px;
+    }
+
+    .section5 .inner .list .item {
+        position: relative;
+        width: 23.5%;
+        height: 282px;
+        position: relative;
+    }
+
+    .section5 .inner .list .item a {}
+
+    .section5 .inner .list .item a img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .section5 .inner .list .item a .text::after {
+        content: '';
+        color: #2929299a;
+        background-color: #1F1F1F;
+        width: 100%;
+        height: 100%;
+        display: none;
+
+
+    }
+
+    .section5 .inner .list .item a .text {
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .section5 .inner .list .item a .text strong {
+        display: block;
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+
+    }
+
+    .section5 .inner .list .item a .text p {
+        font-size: 16px;
+    }
+
+    .section5 .inner .btn-more {}
+
     .section6 {}
 
     .section6 .inner {
@@ -1378,50 +1441,52 @@ p {
     }
 
 
-    /* 
-    footer {}
 
-    footer .inner {
-        padding: 30px 0;
-        font-size: 14px;
+    .footer {}
+
+    .footer .inner {
+        max-width: 767px;
+        width: calc(100% - 40px);
     }
 
-    footer .inner .footer_nav {
-        display: flex;
-        justify-content: center;
-        gap: 40px;
-        font-size: 16px;
-        font-weight: 600;
-    }
-
-    footer .inner .footer_nav li {}
-
-    footer .inner .footer_nav li a {}
-
-    footer .inner .info_wrap {
-        margin: 20px 0px;
-        display: flex;
+    .footer .inner .footer_nav {
         flex-direction: column;
         gap: 4px;
+        font-size: 14px;/* 안먹힘 */
+
 
     }
 
-    footer .inner .info_wrap ul {
+    .footer .inner .footer_nav li a {
+
+    }
+
+    .footer .inner .info_wrap {
+        margin: 0;
         display: flex;
-        gap: 16px;
-        justify-content: center;
+        flex-direction: column;
+        align-items:start;
+        gap: 0px;/* 안먹힘 */
 
     }
 
-    footer .inner .info_wrap ul li {}
+    .footer .inner .info_wrap ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: left;
 
-    footer .inner .copyright {
+    }
+
+    .footer .inner .info_wrap ul li {}
+
+    .footer .inner .copyright {
         text-align: center;
         color: #888888;
     }
 
-    footer .inner .copyright p {
+    .footer .inner .copyright p {
         font-size: 14px;
-    } */
+    }
 
 }
