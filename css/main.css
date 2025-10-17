@@ -567,6 +567,7 @@ p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 
 }
 
@@ -575,14 +576,23 @@ p {
 
 .section4 .inner .text_wrap h2 {
     white-space: nowrap;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .section4 .inner .text_wrap p {
     margin-bottom: 50px;
 }
 
-.section .inner .text_wrap .btn-more {}
+
+.section .inner .btn-more.mobile {
+    margin-top: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+}
+
+.section4 .inner .btn-more {}
 
 .section4 .inner .list {}
 
@@ -681,12 +691,15 @@ p {
     font-family: 'Eulyoo1945';
 }
 
+
+
 .section5 {}
 
 .section5 .inner {
     max-width: 1200px;
     width: calc(100% - 360px);
     margin: 0 auto;
+    position: relative;
 
 }
 
@@ -761,7 +774,11 @@ p {
     font-size: 16px;
 }
 
-.section5 .inner .btn-more {}
+.section5 .inner .btn-more {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 #section6 {}
@@ -999,16 +1016,28 @@ p {
     .section4 .inner {
         max-width: 1023px;
         width: calc(100% - 80px);
+        padding: 100px 0;
         display: block;
     }
 
-    .section4 .title_wrap {
-        margin-bottom: 45px;
+    .section4 .inner .text_wrap .btn-more.pc {
+        display: none;
+    }
+
+    .section4 .inner .btn-more.mobile {
+        display: inline-flex;
+    }
+
+    .section4 .inner .text_wrap {
         text-align: center;
     }
 
-    .section4 .title_wrap h2 {
-        margin-bottom: 10px;
+    .section4 .inner .text_wrap h2 {
+        margin-bottom: 20px;
+    }
+
+    .section4 .inner .text_wrap p {
+        margin-bottom: 30px;
     }
 
 
@@ -1346,8 +1375,26 @@ p {
         display: block;
     }
 
-    .section4 .inner .title_wrap h2 {
-        margin-bottom: 10px;
+    .section4 .inner .text_wrap {
+        text-align: center;
+    }
+
+    .section4 .inner .text_wrap h2 {
+        margin-bottom: 20px;
+    }
+
+    .section4 .inner .text_wrap p {
+        margin-bottom: 30px;
+    }
+
+    .section4 .inner .text_wrap .btn-more.pc {
+        display: none;
+    }
+
+    .section4 .inner .btn-more.mobile {
+        display: inline-flex;
+
+
     }
 
 
@@ -1392,42 +1439,43 @@ p {
         font-weight: 600;
     }
 
+
+
     .section5 {}
 
     .section5 .inner {
         max-width: 767px;
         width: calc(100% - 40px);
 
+
     }
 
     .section5 .inner .title_wrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
 
     }
 
     .section5 .inner .title_wrap h2 {
-        /*     margin-bottom: 10px; */
+        line-height: 1;
+        margin-bottom: 15px;
     }
 
     .section5 .inner .title_wrap p {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     .section5 .inner .list {
-        display: flex;
-        justify-content: space-between;
-        gap: 24px;
-        margin-bottom: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin-bottom: 30px;
     }
 
     .section5 .inner .list .item {
         position: relative;
-        width: 23.5%;
-        height: 282px;
-        position: relative;
+        width: 100%;
+        height: 160px;
+
     }
 
     .section5 .inner .list .item a {}
@@ -1439,7 +1487,7 @@ p {
 
     }
 
-    .section5 .inner .list .item a .text::after {
+    /*     .section5 .inner .list .item a .text::after {
         content: '';
         color: #2929299a;
         background-color: #1F1F1F;
@@ -1448,26 +1496,28 @@ p {
         display: none;
 
 
-    }
+    } */
 
     .section5 .inner .list .item a .text {
-        text-align: center;
+        text-align: left;
+        margin-left: 10px;
         position: absolute;
         width: 100%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        top: 95%;
+        left: 0;
+        transform: translateY(-95%);
     }
 
     .section5 .inner .list .item a .text strong {
         display: block;
-        font-size: 24px;
-        font-weight: 600;
-        margin-bottom: 10px;
+        font-size: 18px;
+        margin-bottom: 0;
 
     }
 
     .section5 .inner .list .item a .text p {
+        display: none;
+        /* 나중에 지우기 */
         font-size: 16px;
     }
 
