@@ -163,8 +163,8 @@ p {
     gap: 28px;
     white-space: nowrap;
     display: none;
-/*     opacity: 1; */
-/*     visibility: hidden; */
+    /*     opacity: 1; */
+    /*     visibility: hidden; */
 
 }
 
@@ -250,7 +250,7 @@ p {
     right: 0;
     background-color: rgb(143, 143, 143);
     width: 72.06%;
- /*    overflow-y: scroll; */
+    /*    overflow-y: scroll; */
 }
 
 #header .inner .nav_mobile:active {}
@@ -920,6 +920,10 @@ p {
         padding: 3px 12px;
     }
 
+    #fullpage .section:not(#footer) {
+        min-height: unset;
+    }
+
     #header .inner {
         height: 60px;
 
@@ -955,6 +959,7 @@ p {
     #section1 .inner {
         max-width: 1023px;
         width: calc(100% - 80px);
+        padding: 100px 0;
     }
 
 
@@ -979,6 +984,7 @@ p {
     .section2and3 .inner {
         max-width: 1023px;
         width: calc(100% - 80px);
+        padding: 100px 0;
     }
 
     .section2and3 .inner .item_wrap {
@@ -1027,6 +1033,7 @@ p {
 
     .section4 .inner .btn-more.mobile {
         display: inline-flex;
+        margin-top: 40px;
     }
 
     .section4 .inner .text_wrap {
@@ -1038,7 +1045,7 @@ p {
     }
 
     .section4 .inner .text_wrap p {
-        margin-bottom: 30px;
+        margin-bottom: 40px;
     }
 
 
@@ -1068,8 +1075,7 @@ p {
 
 
     .section4 .inner .list .palette .item {
-        width: 176px;
-        height: 176px;
+        width: 100%;
     }
 
     .section4 .inner .list .palette .item a .stone_info .stone_name.bright {
@@ -1084,6 +1090,7 @@ p {
         max-width: 1023px;
         width: calc(100% - 80px);
         margin: 0 auto;
+        padding: 100px 0;
     }
 
     .section5 .inner .title_wrap {
@@ -1156,6 +1163,7 @@ p {
         max-width: 1023px;
         width: calc(100% - 80px);
         margin: 0 auto;
+        padding: 100px 0;
     }
 
     .section6 .inner .list .item {
@@ -1374,6 +1382,8 @@ p {
         max-width: 767px;
         width: calc(100% - 40px);
         display: block;
+        padding: 60px 0 130px;
+
     }
 
     .section4 .inner .text_wrap {
@@ -1394,6 +1404,7 @@ p {
 
     .section4 .inner .btn-more.mobile {
         display: inline-flex;
+        margin-top: 30px;
 
 
     }
@@ -1447,6 +1458,7 @@ p {
     .section5 .inner {
         max-width: 767px;
         width: calc(100% - 40px);
+        padding: 60px 0 90px;
 
 
     }
@@ -1529,6 +1541,7 @@ p {
     .section6 .inner {
         max-width: 767px;
         width: calc(100% - 40px);
+        padding: 60px 0;
     }
 
 
