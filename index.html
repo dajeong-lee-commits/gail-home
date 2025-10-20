@@ -21,22 +21,21 @@
             navigationTooltips: ['First page', 'Second page', 'Third and last page'],
             responsiveWidth: 900,
             afterResponsive: function (isResponsive) {
-
             }
 
         });/* 풀페이지 */
-        /* 
-                let depth01 = document.querySelector('.depth-01')
-                let bg = document.querySelector('.bg');
         
-                depth01.addEventListener('mouseover' , () => {
-                    bg.style.display = 'block'; 
-        
-                });
-                 depth01.addEventListener('mouseout' , () => {
-        
-        
-                }); */
+        let depth1 = $('.header .gnb > li');
+        let dpeth2 = $('.heder .depth-02')
+        let Bg = $('.header .bg')
+
+        depth1.on('mouseenter',function () {
+            $(this).
+
+        })
+
+
+
 
 
 
@@ -49,7 +48,7 @@
 
     <header id="header">
         <div class="inner">
-            <div class="bg"></div><!-- .bg end -->
+            <div class="bg"><span>네비 배경</span></div><!-- .bg end -->
             <h1 class="logo">
                 <a href="#"><img src="img/icon/log.png" alt="로고"></a>
             </h1><!-- .logo end -->
