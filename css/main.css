@@ -114,9 +114,9 @@ p {
     position: absolute;
     top: 100%;
     left: 0;
-    display: none;
-
 }
+
+#header .inner .bg {}
 
 
 #header .inner .logo {
@@ -162,19 +162,20 @@ p {
     top: 80px;
     gap: 28px;
     white-space: nowrap;
-    opacity: 1;
-    visibility: hidden;
+    display: none;
+/*     opacity: 1; */
+/*     visibility: hidden; */
 
 }
 
-#header .inner .nav_pc .gnb>li:hover .depth-02 {
+/* #header .inner .nav_pc .gnb>li:hover .depth-02 {
     display: flex;
     opacity: 1;
     transition: 0.3s;
     visibility: visible;
 
 
-}
+} */
 
 
 
@@ -249,7 +250,7 @@ p {
     right: 0;
     background-color: rgb(143, 143, 143);
     width: 72.06%;
-    overflow-y: scroll;
+ /*    overflow-y: scroll; */
 }
 
 #header .inner .nav_mobile:active {}
