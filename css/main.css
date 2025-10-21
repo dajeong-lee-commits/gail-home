@@ -163,8 +163,13 @@ p {
     gap: 28px;
     white-space: nowrap;
     display: none;
+<<<<<<< HEAD
     /*     opacity: 1; */
     /*     visibility: hidden; */
+=======
+/*     opacity: 1; */
+/*     visibility: hidden; */
+>>>>>>> e3ae79dbb560699defcf7f6237f1dd29bf545999
 
 }
 
@@ -250,7 +255,11 @@ p {
     right: 0;
     background-color: rgb(143, 143, 143);
     width: 72.06%;
+<<<<<<< HEAD
     /*    overflow-y: scroll; */
+=======
+ /*    overflow-y: scroll; */
+>>>>>>> e3ae79dbb560699defcf7f6237f1dd29bf545999
 }
 
 #header .inner .nav_mobile:active {}
