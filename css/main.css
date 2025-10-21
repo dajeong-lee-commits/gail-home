@@ -163,13 +163,9 @@ p {
     gap: 28px;
     white-space: nowrap;
     display: none;
-<<<<<<< HEAD
     /*     opacity: 1; */
     /*     visibility: hidden; */
-=======
-/*     opacity: 1; */
-/*     visibility: hidden; */
->>>>>>> e3ae79dbb560699defcf7f6237f1dd29bf545999
+
 
 }
 
@@ -246,28 +242,28 @@ p {
 }
 
 #header .mobile {
-    display: none;
+    /*  display: none; */
 }
 
 #header .inner .nav_mobile {
     position: absolute;
     top: 0;
     right: 0;
-    background-color: rgb(143, 143, 143);
+    background-color: #241C15;
+    padding: 60px 0;
     width: 72.06%;
-<<<<<<< HEAD
     /*    overflow-y: scroll; */
-=======
- /*    overflow-y: scroll; */
->>>>>>> e3ae79dbb560699defcf7f6237f1dd29bf545999
+
+
 }
 
-#header .inner .nav_mobile:active {}
+#header .inner .nav_mobile.active {}
 
 #header .inner .nav_mobile .toolbar {
     display: flex;
     justify-content: space-between;
     margin-bottom: 40px;
+    padding: 0 40px;
 }
 
 #header .inner .nav_mobile .toolbar .close_btn {
@@ -279,9 +275,11 @@ p {
 #header .inner .nav_mobile .toolbar .icon_wrap {
     display: flex;
     gap: 20px;
+
 }
 
 #header .inner .nav_mobile .util {
+    padding: 0 40px;
     margin-bottom: 62px;
 }
 
@@ -290,7 +288,8 @@ p {
 #header .inner .nav_mobile .gnb li {}
 
 #header .inner .nav_mobile .gnb li .depth-01 {
-    background-color: rgb(77, 150, 150);
+    padding: 0 40px;
+    background-color: #ff48ff;
     font-size: 18px;
     width: 100%;
     height: 40px;
@@ -304,10 +303,11 @@ p {
     display: flex;
 
 
+
 }
 
 #header .inner .nav_mobile .gnb li .depth-02 li a {
-    background-color: #241C15;
+    padding: 0 40px;
     font-size: 14px;
     width: 100%;
     height: 40px;
@@ -1391,7 +1391,7 @@ p {
         max-width: 767px;
         width: calc(100% - 40px);
         display: block;
-        padding: 60px 0 130px;
+        padding: 60px 0 120px;
 
     }
 
