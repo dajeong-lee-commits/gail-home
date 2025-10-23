@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 <script src="lib/fullpage.js"></script>
+<script src="lib/jquery-3.7.1.min.js"></script>
 
 <script>
     window.onload = () => {
         var myFullpage = new fullpage('#fullpage', {
             anchors: ['firstPage', 'secondPage', '3rdPage'],
-            sectionsColor: ['transparent', '#282019', '#282019','#F6F5F0', '#F6F5F0', '#282019', '#282019', '#282019', '#463A2F'],
+            sectionsColor: ['transparent', '#282019', '#282019', '#F6F5F0', '#F6F5F0', '#282019', '#282019', '#282019', '#463A2F'],
             navigation: true,
             navigationPosition: 'right',
             navigationTooltips: ['First page', 'Second page', 'Third and last page'],
@@ -23,25 +24,34 @@
             afterResponsive: function (isResponsive) {
             }
 
-        });/* 풀페이지 */
+        });
+
+
+        /* 풀페이지 */
+
+        /*         let depth1 = $('.header .gnb > li');
+                let dpeth2 = $('.heder .depth-02')
+                let Bg = $('.header .bg')
         
-/*         let depth1 = $('.header .gnb > li');
-        let dpeth2 = $('.heder .depth-02')
-        let Bg = $('.header .bg')
-
-        depth1.on('mouseenter',function () {
-            $(this).
-
-        }) */
-
-
-
-
-
-
-
+                depth1.on('mouseenter',function () {
+                    $(this).
+        
+                }) */
     };
 </script>
+<script>
+    $(function () {
+        $('#header .menu_btn').on('click', function () {
+            $(this).next('.nav_mobile').addClass('active');
+        })//모바일 네비게이션 열기
+        $('#header .close_btn').on('click', function () {
+            $(this).parents('.nav_mobile').removeClass('active');
+        })//모바일 네비게이션 열기
+
+
+    })
+</script>
+
 
 
 <body>
@@ -235,11 +245,9 @@
                 <div class="item_wrap">
                     <div class="text_wrap">
                         <h2>한국 전통 물감의<br />色을 찾아서</h2>
-                        <p>2013년 한국 채색문화의 대변혁을 주도하는 전통 채색재료의 개발이
-                            경기도 양평에서 시작되었습니다.</p>
-                        <p>꾸준한 노력끝에 현재 24종의 석채와 12색의토채를 국내 생산 하고 있으며, 추후 해외 천연안료의 지속적인 국내 소개와 우리땅에서 채취되는 광물자원으로 고유의
-                            천연안료를
-                            개발하여 한국 채색 문화의 정통성을 이끌어가고자 합니다. </p>
+                        <p>조선 후기 사회적, 문화적 무관심 속에 전통 안료인 천연석채의 생산비법은 100년동안 잊혀졌습니다.</p>
+                        <p>옛 선조들이 미의식이 담긴 채색 문화 유산을 보존하고 전통 색채의 아름다움을 널리 알리고자 2013년 부터 전통 안료에 대한
+                            본격적인 연구와 자료수집이 시작되었으며 마침내 천연 석채의 국내 생산에 성공하였습니다. </p>
                     </div><!-- .text_wrap end -->
                     <div class="image_wrap">
                         <div class="image left">
@@ -260,12 +268,10 @@
             <div class="inner">
                 <div class="item_wrap">
                     <div class="text_wrap">
-                        <h2>한국 전통 물감의<br />色을 찾아서</h2>
-                        <p>2013년 한국 채색문화의 대변혁을 주도하는 전통 채색재료의 개발이
-                            경기도 양평에서 시작되었습니다.</p>
-                        <p>꾸준한 노력끝에 현재 24종의 석채와 12색의토채를 국내 생산 하고 있으며, 추후 해외 천연안료의 지속적인 국내 소개와 우리땅에서 채취되는 광물자원으로 고유의
-                            천연안료를
-                            개발하여 한국 채색 문화의 정통성을 이끌어가고자 합니다. </p>
+                        <h2>풍파를 견딘 단청,<br />새롭게 태어나다.</h2>
+                        <p>옛 정통 방식을 그대로 재현하여 완성된 천연 안료는 현재 전통 단청 복원 사업에도 이용되고 있습니다. 수 백년전 안료와 동일한 재료와 방식을 사용함으로써 단청 고유의
+                            색감과 문화재의 원형 복원 이라는 큰 가치를 부여하고 있습니다. </p>
+
                     </div><!-- .text_wrap end -->
                     <div class="image_wrap">
                         <div class="image left">
