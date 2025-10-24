@@ -29,32 +29,32 @@
 
         /* 풀페이지 */
 
-        /*         let depth1 = $('.header .gnb > li');
-                let dpeth2 = $('.heder .depth-02')
-                let Bg = $('.header .bg')
-        
-                depth1.on('mouseenter',function () {
-                    $(this).
-        
-                }) */
     };
 </script>
 <script>
     $(function () {
-        let bg = $('.bg');
+        let navBg = $('#header .inner .bg');
+        let depth1 = $('#header .inner .nav_pc .gnb>li .depth-01');
+        let depth2 = $('#header .inner .nav_pc .gnb>li .depth-02');
 
-
-
-
-
-
-
+        depth1.on('mouseenter', function (){
+            // $(this).siblings(depth2).fadeIn(200);
+            $(this).siblings(depth2).css({'display' : 'flex'});
+            navBg.fadeIn(200);
+        })
+        depth1.on('mouseleave', function (){
+            $(this).siblings(depth2).fadeOut(200);
+            navBg.fadeOut(200);
+        })
+        
+      
+ 
         $('#header .menu_btn').on('click', function () {
             $(this).next('.nav_mobile').addClass('active');
-        })//모바일 네비게이션 열기
+        });//모바일 네비게이션 열기
         $('#header .close_btn').on('click', function () {
             $(this).parents('.nav_mobile').removeClass('active');
-        })//모바일 네비게이션 열기
+        });//모바일 네비게이션 닫기
     })
 </script>
 

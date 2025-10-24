@@ -115,9 +115,13 @@ p {
     position: absolute;
     top: 100%;
     left: 0;
+    display: none;
 }
 
-#header .inner .bg {}
+#header .inner .bg span {
+    position: absolute;
+    left: -999999px
+}
 
 
 #header .inner .logo {
@@ -151,6 +155,7 @@ p {
     height: 80px;
     line-height: 80px;
     display: block;
+    padding: 0;
 }
 
 
@@ -164,10 +169,6 @@ p {
     gap: 28px;
     white-space: nowrap;
     display: none;
-    /*     opacity: 1; */
-    /*     visibility: hidden; */
-
-
 }
 
 /* #header .inner .nav_pc .gnb>li:hover .depth-02 {
