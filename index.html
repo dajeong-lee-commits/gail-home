@@ -41,14 +41,20 @@
 </script>
 <script>
     $(function () {
+        let bg = $('.bg');
+
+
+
+
+
+
+
         $('#header .menu_btn').on('click', function () {
             $(this).next('.nav_mobile').addClass('active');
         })//모바일 네비게이션 열기
         $('#header .close_btn').on('click', function () {
             $(this).parents('.nav_mobile').removeClass('active');
         })//모바일 네비게이션 열기
-
-
     })
 </script>
 

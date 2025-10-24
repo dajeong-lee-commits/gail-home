@@ -104,7 +104,7 @@ p {
     height: 80px;
     padding: 0 3.33%;
     margin: 0 auto;
-    
+
 
 }
 
@@ -1019,6 +1019,10 @@ p {
 
     #header {}
 
+    #header .mobile {
+        display: block;
+    }
+
     .section0 .main .title_wrap h2 {
         font-size: 36px;
         margin-bottom: 5px;
@@ -1354,6 +1358,10 @@ p {
 
 
     #header .inner .menu_btn {
+        display: block;
+    }
+
+    #header .mobile {
         display: block;
     }
 
