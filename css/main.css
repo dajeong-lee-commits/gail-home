@@ -253,7 +253,6 @@ p {
     transition: 0.5s;
 }
 
-#header .inner .nav_mobile.active {}
 
 #header .inner .nav_mobile .toolbar {
     display: flex;
@@ -263,6 +262,7 @@ p {
 }
 
 #header .inner .nav_mobile .toolbar .close_btn {
+    padding: 0;
     order: 1;
 }
 
@@ -283,25 +283,45 @@ p {
 
 #header .inner .nav_mobile .gnb li {}
 
-#header .inner .nav_mobile .gnb li .depth-01 {
+#header .inner .nav_mobile .gnb>li .depth-01 {
     padding: 0 40px;
     font-size: 18px;
     width: 100%;
     height: 40px;
     line-height: 40px;
     display: block;
+    position: relative;
+
 }
 
-#header .inner .nav_mobile .gnb li .depth-02 {}
+#header .inner .nav_mobile .gnb>li .depth-01::before {
+    content: '';
+    background: url(../img/icon/icon_moreBottom-white.svg) center center / 100% no-repeat;
+    position: absolute;
+    width: 16px;
+    height: 100%;
+    top: 0;
+    right: 40px;
+    z-index: 11;
+    
+}
+#header .inner .nav_mobile .gnb>li .depth-01.noDepth-02::before {
+    content: none;
+}
 
-#header .inner .nav_mobile .gnb li .depth-02 li {
+#header .inner .nav_mobile .gnb>li .depth-02 {
+    background-color: #1C0F00;
+    display: none;
+}
+
+#header .inner .nav_mobile .gnb>li .depth-02 li {
     display: flex;
 
 
 
 }
 
-#header .inner .nav_mobile .gnb li .depth-02 li a {
+#header .inner .nav_mobile .gnb>li .depth-02 li a {
     padding: 0 40px;
     font-size: 14px;
     width: 100%;
