@@ -413,17 +413,9 @@ p {
 }
 
 
-
-.section1 .inner .item_wrap .image_wrap .left .bottom {
-    /*     width: 260px; */
-    width: 41.32%;
-    height: 182px;
-
-}
-
-
 .section1 .inner .item_wrap .image_wrap {
     width: 49%;
+    height: 402px;
     position: relative;
     display: flex;
     justify-content: right;
@@ -433,7 +425,17 @@ p {
     /*     width: 233px; */
     width: 77.89%;
     height: 258px;
-    margin-bottom: 154px;
+    display: block;
+}
+.section1 .inner .item_wrap .image_wrap .right img::after {
+    content: '그림제목';
+    background-color: aqua;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    display: block;
+
 }
 
 .section1 .inner .item_wrap .image_wrap .left {
@@ -441,21 +443,18 @@ p {
     position: absolute;
     bottom: 0;
     left: 0;
+    width: 41.32%;
+    height: 182px;
 }
 
 
 .section1and2 .inner .item_wrap .image img {
-
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
 /* section1 */
-
-
-
-
 
 
 
