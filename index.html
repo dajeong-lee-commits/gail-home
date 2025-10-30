@@ -23,7 +23,7 @@
             responsiveWidth: 1024,
             afterResponsive: function (isResponsive) {
             }
-            
+
 
         });
 
@@ -54,22 +54,22 @@
         let mDepth2 = $('header .inner .nav_mobile .gnb>li .depth-02');
 
 
-    /*     mDepth1.on('click', function(){
-            $(this).siblings(mDepth2).slideToggle();
-                if ($(this).siblings('.depth-02')
-            
+        /*     mDepth1.on('click', function(){
+                $(this).siblings(mDepth2).slideToggle();
+                    if ($(this).siblings('.depth-02')
+                
+    
+            }); */
+        /* //3기능
+//1차 메뉴를 클릭했을 때 실행
+//조건식
+//클릭한 요소의 형제선택자 .depth-02가 display값이 none일때 실행
+//2차메뉴는 slideUp()
+//내가 클릭한 요소의 형제 선택자 depth-02는 slideDown()
+//조건이 맞지 않을 때 
+//내가 클릭한 요소의 형제 선택자.depth-02는 slideUp()
+*/
 
-        }); */
-                    /* //3기능
-            //1차 메뉴를 클릭했을 때 실행
-            //조건식
-            //클릭한 요소의 형제선택자 .depth-02가 display값이 none일때 실행
-            //2차메뉴는 slideUp()
-            //내가 클릭한 요소의 형제 선택자 depth-02는 slideDown()
-            //조건이 맞지 않을 때 
-            //내가 클릭한 요소의 형제 선택자.depth-02는 slideUp()
-            */
-           
 
 
 
@@ -81,10 +81,10 @@
         });//모바일 네비게이션 닫기
 
 
-        $('.section6 .inner .list .item').on('mouseenter', function (){
+        $('.section6 .inner .list .item').on('mouseenter', function () {
             $(this).addClass('active');
         })
-        $('.section6 .inner .list .item').on('mouseleave', function (){
+        $('.section6 .inner .list .item').on('mouseleave', function () {
             $(this).removeClass('active');
         })//section6 제품 호버시 텍스트 추가
     })
@@ -256,7 +256,8 @@
 
         </div>
         <div class="section section1 section1and2" id="section1">
-            <img src="img/pattern/bottompattern.svg" alt="" class="pattern">
+            <img src="img/pattern/bottompattern.svg" alt="" class="pattern pc">
+            <img src="img/pattern/bottompattern-mobile.svg" alt="" class="pattern mobile">
             <div class="inner">
                 <div class="item_wrap">
                     <div class="text_wrap">
@@ -279,7 +280,8 @@
 
         </div><!-- #section1 end -->
         <div class="section section2 section1and2" id="section2">
-            <img src="img/pattern/bottompattern.svg" alt="" class="pattern">
+            <img src="img/pattern/bottompattern.svg" alt="" class="pattern pc">
+            <img src="img/pattern/bottompattern-mobile.svg" alt="" class="pattern mobile">
             <div class="inner">
                 <div class="item_wrap">
                     <div class="text_wrap">
@@ -305,7 +307,7 @@
         <div class="section section3 section3and4" id="section3">
             <div class="inner">
                 <div class="image">
-                    <img src="img/section/section-2.jpg" alt="">
+                    <img src="img/product/product1.jpg" alt="">
                 </div><!-- .image end -->
                 <div class="item_wrap">
                     <img src="img/pattern/knot.svg" alt="" class="pattern-pc">
@@ -333,7 +335,7 @@
         <div class="section section4 section3and4" id="section4">
             <div class="inner">
                 <div class="image">
-                    <img src="img/section/section-3.jpg" alt="">
+                    <img src="img/product/product2.jpg" alt="">
                 </div><!-- .image end -->
                 <div class="item_wrap">
                     <img src="img/pattern/knot.svg" alt="" class="pattern-pc">
@@ -546,7 +548,7 @@
                 <div class="list">
                     <div class="item">
                         <a href="#">
-                            <img src="img/section/section5/product1.png" alt="">
+                            <img src="img/product/product1.jpg" alt="">
                             <div class="text">
                                 <strong>석채</strong>
                                 <p>수년간의 계획과 연구로<br /> 생산에 성공한 고품질의 석채</p>
@@ -555,7 +557,7 @@
                     </div><!-- .item end -->
                     <div class="item">
                         <a href="#">
-                            <img src="img/section/section5/product2.png" alt="">
+                            <img src="img/product/product2.jpg" alt="">
                             <div class="text">
                                 <strong>토채</strong>
                                 <p>천연흙을 원료로 한<br />기품있는 색채</p>
@@ -564,7 +566,7 @@
                     </div><!-- .item end -->
                     <div class="item">
                         <a href="#">
-                            <img src="img/section/section5/product5.png" alt="">
+                            <img src="img/product/product3.png" alt="">
                             <div class="text">
                                 <strong>유기안료</strong>
                                 <p>식물, 곤충의 분비물 등의<br />천연자원에서 추출됩니다</p>
