@@ -57,9 +57,9 @@
         mDepth1.on('click', function () {
             $(this).siblings(mDepth2).slideToggle();
             /* if ($(this).siblings('.depth-02')) */
-                
-    
-            });
+
+
+        });
         /* //3기능
 //1차 메뉴를 클릭했을 때 실행
 //조건식
@@ -87,6 +87,8 @@
         $('.section6 .inner .list .item').on('mouseleave', function () {
             $(this).removeClass('active');
         })//section6 제품 호버시 텍스트 추가
+
+
     })
 </script>
 
@@ -317,11 +319,10 @@
                     <div class="text_wrap">
                         <h3>긴 세월 잃지 않는 선명한 아름다움.</h3>
                         <h2>‘석채’石彩</h2>
-                        <p>남동광, 공작석등 천연 광물에서 얻은 돌가루를 가공하여
-                            만드는 석채는 색이 선명하고 변하지 않아 오래된 사찰이나
+                        <p>남동광, 공작석등 천연 광물에서 얻은 돌가루로
+                            만드는 석채는 광물 안료 특유의 선명도를 가지고 있으며 색이 변하지 않아 오래된 사찰이나
                             궁궐의 단청 등 채색 문화재에 사용되었습니다.</p>
-                        <p>돌을 갈아 물과 시간으로 만드는 석채는 한국 미술의
-                            전통적인 색채 미감을 보여주는 재료입니다.</p>
+                        <p>돌을 갈아 물과 시간으로 만드는 석채안료는 한국 채색 문화의 미감을 보여주는 귀중한 재료입니다.</p>
 
                     </div><!-- .text_wrap end -->
                     <a href="#" class="btn-more dark">
@@ -347,7 +348,7 @@
                         <h2>‘토채’土彩</h2>
                         <p> 천연토를 기반으로 하여 오랜시간 수비 작업과 불순물 제거로
                             완성되는 토채는 석채보다 입자감이 있으며 석채나
-                            다른 분채와 쉽게 섞어 쓸 수 있습니다.</p>
+                            다른 분채와 쉽게 섞어 쓸 수 있는것이 특징입니다.</p>
                         <p>자연 본연의 색을 담은 토채는 깊고 단아한 색감과
                             인공 분채로 표현하기 어려운 천연스러움을 가지고 있습니다.
                         </p>
@@ -378,8 +379,9 @@
 
                     <ul class="palette palette-top">
                         <li class="item">
-                            <a href="#">
-                                <img src="img/section/color/color-1.png" alt="">
+                            <button class="open_modal_btn" data-modal-id="modal1">
+
+                                <img src=" img/section/color/color-1.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color1.jpg" alt="">
                                     <div class="stone_name">
@@ -387,10 +389,11 @@
                                         <span>藍銅石</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-2.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color2.jpg" alt="">
@@ -399,10 +402,10 @@
                                         <span>靑金石</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-3.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color3.PNG" alt="">
@@ -411,13 +414,13 @@
                                         <span>孔雀石</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                     </ul><!-- .list .list-top end -->
 
                     <ul class="palette palette-row2">
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-4.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color4.jpg" alt="">
@@ -426,10 +429,10 @@
                                         <span>磊綠</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-5.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color5.jpg" alt="">
@@ -438,10 +441,10 @@
                                         <span>虎眼石</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-6.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color6.png" alt="">
@@ -450,14 +453,14 @@
                                         <span>辰砂</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                     </ul><!-- .palette palette-row2 end -->
 
                     <ul class="palette palette-row3">
 
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-7.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color7.png" alt="">
@@ -466,10 +469,10 @@
                                         <span>赤鐵鑛</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-8.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color8.png" alt="">
@@ -478,10 +481,10 @@
                                         <span>鷄冠石</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-9.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color9.png" alt="">
@@ -490,12 +493,12 @@
                                         <span>石黃</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                     </ul><!-- .palette palette-row3 -->
                     <ul class="palette palette-bottom">
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-10.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color10.png" alt="">
@@ -504,10 +507,10 @@
                                         <span>珊瑚</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-11.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color11.png" alt="">
@@ -516,10 +519,10 @@
                                         <span>貝殼</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <a href="#">
+                            <button class="open_modal_btn" data-modal-id="modal1">
                                 <img src="img/section/color/color-12.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color12.png" alt="">
@@ -528,7 +531,7 @@
                                         <span>石墨</span>
                                     </div><!-- stone_name end -->
                                 </div><!-- .stone_info end -->
-                            </a>
+                            </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                     </ul><!-- .palette palette-bottom -->
                 </div><!-- .list end -->
@@ -702,6 +705,12 @@
 
 
     </div><!-- #fullpage end -->
+    <div class="lightbox-gallery">
+        <div class="item">
+            <img src="img/section/design/design02.png" data-image-hd="img/section/design/design02.png"
+                alt="Lorem ipsum dolor sit amet">
+        </div><!-- .item end -->
+    </div><!-- .lightbox-gallery.list end -->
 
 
 
