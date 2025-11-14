@@ -731,30 +731,41 @@ p {
     width: 100%;
     height: 100%;
     z-index: 99;
+    display: none;
 
 
 }
 
+.modal_container.active {
+    display: block;
+}
 
 .modal_container .modal_contents {
-    background-color: #eeeeee;
-    max-width: 734px;
-    height: 540px;
-    padding: 30px 60px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
+}
+
+.modal_container .modal_contents .inner {
+    background-color: #eeeeee;
+    max-width: 734px;
+    height: 540px;
+    padding: 30px 60px;
     border-radius: 10px;
     font-size: 18px;
+    position: relative;
 
 }
-.modal_container .modal_contents .close_btn {
+
+.modal_container .modal_contents .inner .close_btn {
+    position: absolute;
     padding: 0;
-
     cursor: pointer;
+    right: 24px;
 }
+
 .modal_container .modal_contents .close_btn img {}
 
 .modal_contents .stone_name {
@@ -797,9 +808,7 @@ p {
 
 .modal_contents .contents_wrap .contents_left p {}
 
-.modal_contents .contents_wrap .contents_right {
-    
-}
+.modal_contents .contents_wrap .contents_right {}
 
 .modal_contents .contents_wrap .contents_right .info_wrap {
     display: flex;
@@ -829,22 +838,26 @@ p {
     font-weight: 600;
     margin-bottom: 10px;
 }
+
 .modal_contents .contents_wrap .contents_right .color_chip .list {
     display: flex;
     gap: 24px;
 }
+
 .modal_contents .contents_wrap .contents_right .color_chip .list .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 5px;
 }
+
 .modal_contents .contents_wrap .contents_right .color_chip .list .item .chip {
     width: 50px;
     height: 50px;
     display: block;
     border-radius: 50%;
 }
+
 .modal_contents .contents_wrap .contents_right .color_chip .list .item .name {
     font-size: 16px;
 }

@@ -88,11 +88,23 @@
             $(this).removeClass('active');
         })//section6 제품 호버시 텍스트 추가
 
+        $('.section5 .palette-top .item').on('click', function () {
+            $('.modal_container.top').eq($(this).index()).addClass('active');
+        });//section5 첫번째 줄 모달 
+
+        $('.section5 .palette-row2 .item').on('click', function () {
+            $('.modal_container.row2').eq($(this).index()).addClass('active');
+        });//section5 두번째 줄 모달 
+
+
+        $('.modal_container .close_btn').on('click', function () {
+            /* alert(); */
+            $(this).parents('.modal_container').removeClass('active');
+
+        });//닫기 버튼 누르면 모달 사라짐
 
     })
 </script>
-
-
 
 <body>
 
@@ -381,7 +393,7 @@
 
                     <ul class="palette palette-top">
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal01">
 
                                 <img src=" img/section/color/color-1.png" alt="">
                                 <div class="stone_info">
@@ -395,7 +407,7 @@
                             </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal02">
                                 <img src="img/section/color/color-2.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color2.jpg" alt="">
@@ -407,7 +419,7 @@
                             </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal03">
                                 <img src="img/section/color/color-3.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color3.PNG" alt="">
@@ -422,7 +434,7 @@
 
                     <ul class="palette palette-row2">
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal04">
                                 <img src="img/section/color/color-4.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color4.jpg" alt="">
@@ -434,7 +446,7 @@
                             </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal05">
                                 <img src="img/section/color/color-5.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color5.jpg" alt="">
@@ -446,7 +458,7 @@
                             </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal06">
                                 <img src="img/section/color/color-6.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color6.png" alt="">
@@ -462,7 +474,7 @@
                     <ul class="palette palette-row3">
 
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal07">
                                 <img src="img/section/color/color-7.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color7.png" alt="">
@@ -474,7 +486,7 @@
                             </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal08">
                                 <img src="img/section/color/color-8.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color8.png" alt="">
@@ -486,7 +498,7 @@
                             </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal09">
                                 <img src="img/section/color/color-9.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color9.png" alt="">
@@ -500,7 +512,7 @@
                     </ul><!-- .palette palette-row3 -->
                     <ul class="palette palette-bottom">
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal10">
                                 <img src="img/section/color/color-10.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color10.png" alt="">
@@ -512,7 +524,7 @@
                             </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal11">
                                 <img src="img/section/color/color-11.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color11.png" alt="">
@@ -524,7 +536,7 @@
                             </button><!-- .open_modal_btn end -->
                         </li><!-- .item end -->
                         <li class="item">
-                            <button class="open_modal_btn" data-modal-id="modal1">
+                            <button class="open_modal_btn" data-modal-id="modal12">
                                 <img src="img/section/color/color-12.png" alt="">
                                 <div class="stone_info">
                                     <img src="img/section/stone/color12.png" alt="">
@@ -707,8 +719,8 @@
 
 
     </div><!-- #fullpage end -->
-    <div class="modal_container">
-        <div class="modal_contents">
+    <div class="modal_container top 01">
+        <div id='modal01' class="modal_contents">
             <div class="inner">
                 <button class="close_btn"><img src="img/icon/icon-close.svg" alt=""></button>
                 <div class="stone_name">
@@ -778,8 +790,341 @@
 
 
             </div><!-- .inner end -->
-        </div><!-- .modal_contents -->
-    </div><!-- .modal_container end -->
+        </div><!-- #modal.modal_contents -->
+    </div><!-- .modal_container.top end -->
+
+    <div class="modal_container top 02">
+        <div id='modal01' class="modal_contents">
+            <div class="inner">
+                <button class="close_btn"><img src="img/icon/icon-close.svg" alt=""></button>
+                <div class="stone_name">
+                    <h3>청금석</h3>
+                    <div class="stone_sub">
+                        <span class="ch">靑金石</span>
+                        <span class="en">Lapis-lazuli</span>
+                    </div><!-- .stone_sub end -->
+
+                </div><!-- title_wrap end -->
+                <div class="contents_wrap">
+                    <div class="contents_left">
+                        <img src="img/section/stone/modal/stone-01.jpg" alt="">
+                        <p>푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과 함께 형성되는 경우가 많다. 푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과
+                            함께 형성되는 경우가 많다.</p>
+                    </div><!-- .contents_left -->
+                    <div class="contents_right">
+                        <ul class="info_wrap">
+                            <li>
+                                <strong>색상</strong>
+                                <span>군청색, 담청색</span>
+                            </li>
+                            <li>
+                                <strong>화학명</strong>
+                                <span>규산알루미늄칼슘나트륨</span>
+                            </li>
+                            <li>
+                                <strong>비중</strong>
+                                <span>2.4</span>
+                            </li>
+                            <li>
+                                <strong>경도</strong>
+                                <span>5 ~ 5.5</span>
+                            </li>
+                            <li>
+                                <strong>굴절률</strong>
+                                <span>1.5</span>
+                            </li>
+                        </ul><!-- .info_wrap end -->
+                        <div class="color_chip">
+                            <h4>석채명칭</h4>
+                            <div class="list">
+                                <div class="item">
+                                    <span class="chip" style="background:#7F85D3"></span>
+                                    <span class="name">청금석</span>
+                                </div><!-- .item end -->
+                            </div><!-- .list end -->
+
+                        </div><!-- .color_chip -->
+
+                    </div><!-- .contents_rigth -->
+
+
+                </div><!-- .contents_wrap -->
+
+
+            </div><!-- .inner end -->
+        </div><!-- #modal.modal_contents -->
+    </div><!-- .modal_container.top end -->
+
+    <div class="modal_container top 03">
+        <div id='modal01' class="modal_contents">
+            <div class="inner">
+                <button class="close_btn"><img src="img/icon/icon-close.svg" alt=""></button>
+                <div class="stone_name">
+                    <h3>공작석</h3>
+                    <div class="stone_sub">
+                        <span class="ch">Malachite</span>
+                    </div><!-- .stone_sub end -->
+
+                </div><!-- title_wrap end -->
+                <div class="contents_wrap">
+                    <div class="contents_left">
+                        <img src="img/section/stone/modal/stone-01.jpg" alt="">
+                        <p>푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과 함께 형성되는 경우가 많다. 푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과
+                            함께 형성되는 경우가 많다.</p>
+                    </div><!-- .contents_left -->
+                    <div class="contents_right">
+                        <ul class="info_wrap">
+                            <li>
+                                <strong>색상</strong>
+                                <span>블루-그린</span>
+                            </li>
+                            <li>
+                                <strong>화학명</strong>
+                                <span>Copper Carbonate Hydroxide</span>
+                            </li>
+                            <li>
+                                <strong>비중</strong>
+                                <span>3.9 ~ 4.05</span>
+                            </li>
+                            <li>
+                                <strong>경도</strong>
+                                <span>3.5 ~ 4.0</span>
+                            </li>
+                            <li>
+                                <strong>굴절률</strong>
+                                <span>1.655 ~ 1.909</span>
+                            </li>
+                        </ul><!-- .info_wrap end -->
+                        <div class="color_chip">
+                            <h4>석채명칭</h4>
+                            <div class="list">
+                                <div class="item">
+                                    <span class="chip" style="background:#30AE67"></span>
+                                    <span class="name">석록</span>
+                                </div><!-- .item end -->
+                                <div class="item">
+                                    <span class="chip" style="background:#4A9D57"></span>
+                                    <span class="name">군록</span>
+                                </div><!-- .item end -->
+                                <div class="item">
+                                    <span class="chip" style="background:#407450"></span>
+                                    <span class="name">하엽</span>
+                                </div><!-- .item end -->
+                                <div class="item">
+                                    <span class="chip" style="background:#A2C197"></span>
+                                    <span class="name">암약엽</span>
+                                </div><!-- .item end -->
+                            </div><!-- .list end -->
+
+                        </div><!-- .color_chip -->
+
+                    </div><!-- .contents_rigth -->
+
+
+                </div><!-- .contents_wrap -->
+
+
+            </div><!-- .inner end -->
+        </div><!-- #modal.modal_contents -->
+    </div><!-- .modal_container.top end -->
+
+    <div class="modal_container row2 04">
+        <div id='modal01' class="modal_contents">
+            <div class="inner">
+                <button class="close_btn"><img src="img/icon/icon-close.svg" alt=""></button>
+                <div class="stone_name">
+                    <h3>뇌록</h3>
+                    <div class="stone_sub">
+                        <span class="ch">磊綠</span>
+                        <span class="en">Celadonite</span>
+                    </div><!-- .stone_sub end -->
+
+                </div><!-- title_wrap end -->
+                <div class="contents_wrap">
+                    <div class="contents_left">
+                        <img src="img/section/stone/modal/stone-01.jpg" alt="">
+                        <p>푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과 함께 형성되는 경우가 많다. 푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과
+                            함께 형성되는 경우가 많다.</p>
+                    </div><!-- .contents_left -->
+                    <div class="contents_right">
+                        <ul class="info_wrap">
+                            <li>
+                                <strong>색상</strong>
+                                <span>그레이-그린</span>
+                            </li>
+                            <li>
+                                <strong>화학명</strong>
+                                <span>Potassium</span>
+                            </li>
+                            <li>
+                                <strong>비중</strong>
+                                <span>2.95~3.05</span>
+                            </li>
+                            <li>
+                                <strong>경도</strong>
+                                <span>2</span>
+                            </li>
+                            <li>
+                                <strong>굴절률</strong>
+                                <span>1.606~1.625</span>
+                            </li>
+                        </ul><!-- .info_wrap end -->
+                        <div class="color_chip">
+                            <h4>석채명칭</h4>
+                            <div class="list">
+                                <div class="item">
+                                    <span class="chip" style="background:#42563A"></span>
+                                    <span class="name">뇌록</span>
+                                </div><!-- .item end -->
+                                <div class="item">
+                                    <span class="chip" style="background:#59876B"></span>
+                                    <span class="name">소성뇌록</span>
+                                </div><!-- .item end -->
+
+                            </div><!-- .list end -->
+
+                        </div><!-- .color_chip -->
+
+                    </div><!-- .contents_rigth -->
+
+
+                </div><!-- .contents_wrap -->
+
+
+            </div><!-- .inner end -->
+        </div><!-- #modal.modal_contents -->
+    </div><!-- .modal_container row2 end -->
+    <div class="modal_container row2 05">
+        <div id='modal01' class="modal_contents">
+            <div class="inner">
+                <button class="close_btn"><img src="img/icon/icon-close.svg" alt=""></button>
+                <div class="stone_name">
+                    <h3>호안석</h3>
+                    <div class="stone_sub">
+                        <span class="ch">虎眼石</span>
+                        <span class="en">Tiger's eye</span>
+                    </div><!-- .stone_sub end -->
+
+                </div><!-- title_wrap end -->
+                <div class="contents_wrap">
+                    <div class="contents_left">
+                        <img src="img/section/stone/modal/stone-01.jpg" alt="">
+                        <p>푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과 함께 형성되는 경우가 많다. 푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과
+                            함께 형성되는 경우가 많다.</p>
+                    </div><!-- .contents_left -->
+                    <div class="contents_right">
+                        <ul class="info_wrap">
+                            <li>
+                                <strong>색상</strong>
+                                <span>황갈색, 갈색</span>
+                            </li>
+                            <li>
+                                <strong>화학명</strong>
+                                <span>이산화규소</span>
+                            </li>
+                            <li>
+                                <strong>비중</strong>
+                                <span>2.5 ~ 2.8</span>
+                            </li>
+                            <li>
+                                <strong>경도</strong>
+                                <span>7.0</span>
+                            </li>
+                            <li>
+                                <strong>굴절률</strong>
+                                <span>1.544</span>
+                            </li>
+                        </ul><!-- .info_wrap end -->
+                        <div class="color_chip">
+                            <h4>석채명칭</h4>
+                            <div class="list">
+                                <div class="item">
+                                    <span class="chip" style="background:#AE914F"></span>
+                                    <span class="name">호안석</span>
+                                </div><!-- .item end -->
+  
+                            </div><!-- .list end -->
+
+                        </div><!-- .color_chip -->
+
+                    </div><!-- .contents_rigth -->
+
+
+                </div><!-- .contents_wrap -->
+
+
+            </div><!-- .inner end -->
+        </div><!-- #modal.modal_contents -->
+    </div><!-- .modal_container row2 end -->
+    <div class="modal_container row2 06">
+        <div id='modal01' class="modal_contents">
+            <div class="inner">
+                <button class="close_btn"><img src="img/icon/icon-close.svg" alt=""></button>
+                <div class="stone_name">
+                    <h3>진사</h3>
+                    <div class="stone_sub">
+                        <span class="ch">辰砂</span>
+                        <span class="en">Cinnabar</span>
+                    </div><!-- .stone_sub end -->
+
+                </div><!-- title_wrap end -->
+                <div class="contents_wrap">
+                    <div class="contents_left">
+                        <img src="img/section/stone/modal/stone-01.jpg" alt="">
+                        <p>푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과 함께 형성되는 경우가 많다. 푸른색을 띠는 탄산염 광물로 구리가 포함된 광물이 풍화되면서 공작석과
+                            함께 형성되는 경우가 많다.</p>
+                    </div><!-- .contents_left -->
+                    <div class="contents_right">
+                        <ul class="info_wrap">
+                            <li>
+                                <strong>색상</strong>
+                                <span>레드</span>
+                            </li>
+                            <li>
+                                <strong>화학명</strong>
+                                <span>Mercury sulfide</span>
+                            </li>
+                            <li>
+                                <strong>비중</strong>
+                                <span>8.0 ~ 8.2</span>
+                            </li>
+                            <li>
+                                <strong>경도</strong>
+                                <span>2.0 ~ 2.5</span>
+                            </li>
+                            <li>
+                                <strong>굴절률</strong>
+                                <span>3.02</span>
+                            </li>
+                        </ul><!-- .info_wrap end -->
+                        <div class="color_chip">
+                            <h4>석채명칭</h4>
+                            <div class="list">
+                                <div class="item">
+                                    <span class="chip" style="background:#DE3A30"></span>
+                                    <span class="name">주보사</span>
+                                </div><!-- .item end -->
+                                <div class="item">
+                                    <span class="chip" style="background:#CD3224"></span>
+                                    <span class="name">경면주사</span>
+                                </div><!-- .item end -->
+                                <div class="item">
+                                    <span class="chip" style="background:#CB341D"></span>
+                                    <span class="name">중국주사</span>
+                                </div><!-- .item end -->
+                            </div><!-- .list end -->
+
+                        </div><!-- .color_chip -->
+
+                    </div><!-- .contents_rigth -->
+
+
+                </div><!-- .contents_wrap -->
+
+
+            </div><!-- .inner end -->
+        </div><!-- #modal.modal_contents -->
+    </div><!-- .modal_container row2 end -->
 
 
 
