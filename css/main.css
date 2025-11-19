@@ -1754,10 +1754,13 @@ p {
 
     /* 모달 수정해야함 */
     .modal_container .modal_contents {
+        width: 100%;
 
     }
 
     .modal_container .modal_contents .inner {
+        width: calc(100% - 40px);
+        max-width: ;
     
         height: auto;
         padding: 30px 60px;
@@ -1770,6 +1773,8 @@ p {
     }
 
     .modal_container .modal_contents .close_btn img {
+        width: 100%;
+        display: block;
     }
 
     .modal_contents .stone_name {
@@ -1817,6 +1822,7 @@ p {
         flex-direction: column;
         gap: 5px;
         margin-bottom: 20px;
+        font-size: 16px;
     }
 
     .modal_contents .contents_wrap .contents_right .info_wrap li {
