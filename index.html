@@ -99,9 +99,16 @@
 
         $('.modal_container .close_btn').on('click', function () {
             /* alert(); */
-           
+            $(this).parents('.modal_container').removeClass('active');
 
-        });//닫기 버튼 누르면 모달 사라짐
+
+        });
+        $('.modal_container').on('click', function (e) {
+            
+            if ($(e.target).is('.modal_container')) {
+                $(this).removeClass('active');
+            }
+        });//닫기 버튼, 모달 외부 누르면 모달 사라짐
 
     })
 </script>
